@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- nav bar -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar scroll</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        &nbsp;
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+  SignUp
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-33">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname">
+          </div>
+          <div class="mb-342">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lname">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                        <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+&nbsp;
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-4">
+                <!-- menu -->
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    Electronic item
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">Mens Fashion</a>
+                  <a href="#" class="list-group-item list-group-item-action">Women Fashion</a>
+                  <a href="#" class="list-group-item list-group-item-action">Sports</a>
+                  <a href="#" class="list-group-item list-group-item-action">Food</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Books</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <!-- slideer -->
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="100">
+                    <img src="https://icms-image.slatic.net/images/ims-web/bcb8600f-a9d9-4700-998f-06b8adfe3668.jpg_1200x1200.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://icms-image.slatic.net/images/ims-web/aabff6b9-83e6-46af-b8e2-a118b6f08e72.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://icms-image.slatic.net/images/ims-web/7a11c98f-5373-4680-9a7f-ce0b144355a3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="container-fluid">
+          <!-- for baner -->
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+              <img src="https://www.webshree.com/images/bannerdesigning.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-1">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+            <!-- product -->
+            <div class="col-md-2">
+              <!-- rem is used for image height -->
+              <div class="card" style="width: 18rem;"> 
+                <img src="https://static-01.daraz.com.np/p/c27bc4d55f171ae4c72be548b6f49589.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Glass</h5>
+                  <p class="card-text">Tik-Tok Glass</p>
+                  <a href="#" class="btn btn-primary">Add to Card</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card" style="width: 18rem;">
+                <img src="https://static-01.daraz.com.np/p/600ce6af296fab7ac5b66aa5638b57c4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cream</h5>
+                  <p class="card-text">Beauti Product</p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card" style="width: 18rem;">
+                <img src="https://static-01.daraz.com.np/p/9cbc62a1808ba50400c6f0b0e9497e48.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Noodles</h5>
+                  <p class="card-text">Food Product</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card" style="width: 18rem;">
+                <img src="https://static-01.daraz.com.np/p/mdc/539e7a6d6b7f30848bcbea08a76d52a6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Girl</h5>
+                  <p class="card-text">For Moodeling</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card" style="width: 18rem;">
+                <img src="https://static-01.daraz.com.np/p/7c7895287b61f2f8f91a28dc4209c4a7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Pods</h5>
+                  <p class="card-text">Apple Product</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card" style="width: 18rem;">
+                <img src="https://static-01.daraz.com.np/p/00487b0fe18fdd097e9f0893bc6ee131.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Glass</h5>
+                  <p class="card-text">Computer Glass</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <!-- footer -->
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+</html>
